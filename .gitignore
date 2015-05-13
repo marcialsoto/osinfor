@@ -23,6 +23,8 @@ build/Release
 # Commenting this out is preferred by some people, see
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
 node_modules
+bower_components
+npm-debug.log
 
 # Users Environment Variables
 .lock-wscript
@@ -73,3 +75,11 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# WordPress y Node.js
+wp-content/themes/osfr/bower_components
+wp-content/themes/osfr/node_modules
+wp-content/themes/osfr/npm-debug.log
+wp-content/themes/osfr/.git
+
+# wp-config.php
