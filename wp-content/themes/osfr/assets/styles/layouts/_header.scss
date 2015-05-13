@@ -1,4 +1,20 @@
 header{
+	border: 0 none !important;
+
+	.navbar-toggle {
+		border-color: transparent !important;
+		padding: 0px;
+		margin-top: 7px;
+		margin-bottom: 7px;
+		background-color: transparent;
+		background-image: none;
+		border: 1px solid transparent;
+		border-radius: 0;
+		&:hover, &:focus, &:active{
+			background-color: transparent !important; 
+		}
+	}
+
 	&.super__nav{
 		text-transform: uppercase;
 		min-height: 30px;
@@ -14,20 +30,20 @@ header{
 			.header__logo{
 				background: $color--orange url(../images/all__logo--bg.png) no-repeat top center; 
 				position: relative;
-				z-index: 2;
-				width: 60px;
-				height: 60px;
+				width: 100px; 
+				height: 30px;
 				overflow: hidden;
 				.logo{
 					margin: 0;
 					padding: 0;
 					a.navbar-brand{
-						width: 60px;
-						height: 60px;
+						width: 100px;
+						height: 30px;
 						display: inline-block;
 						line-height: 1;
 						margin: 0;
 						background-image: url(../images/logo--xs.png);
+						background-repeat: no-repeat;
 						span{
 							position: relative;
 							display: block;
@@ -42,6 +58,9 @@ header{
 			}
 		}
 		.navbar-collapse{
+			background-color: $color--green;
+			border-color: transparent;
+			border: 0 none;
 			.menu-menu-super-container{
 				ul#menu-menu-super{
 					li{
@@ -52,14 +71,34 @@ header{
   							font-family: 'exo_2regular', sans-serif;
   							font-size: 10.5px;
 						}
+						&.active, &.open{
+							a{
+								color: $color--orange;
+								background-color: transparent;
+							}
+							ul{
+								li{
+									a{
+										color: $color--white; 
+									}
+								}
+							}
+						}
 					}
 				}
 			}
 				.navbar-form{
 					margin: 4px 15px;
+					border-color: transparent;
+					margin: 0;
+					float: left;
+					border: 0;
+					padding: 0;
+					margin-bottom: 20px;
 					.search-form{
 						float: left;
 						margin-right: 15px;
+						width: 80%;
 						label{}
 						.input-group{
 							input.search-field{
@@ -69,14 +108,18 @@ header{
 								font-family: 'exo_2regular', sans-serif;
 								font-size: 10.5px;
 								text-transform: uppercase;
+								border: 1px solid transparent;
 							}
 							.input-group-btn{
 								.search-submit{
 									padding: 2px 7px;
 									border-radius: 0;
 									line-height: 1;
+									background-color: $color--orange;
+									border-color: transparent;
 									i{
 										font-size: 13px;
+										color: $color--white;
 									}
 								}
 							}
@@ -109,6 +152,13 @@ header{
 					}
 				}
 		}
+
+	.navbar-toggle {
+		.icon-bar{
+			background-color: $color--white !important;
+		}
+	}
+
 	}
 
 	&.main__nav{
@@ -122,21 +172,38 @@ header{
 
 		}
 		.navbar-collapse{
+			background-color: $color--green--light;
+			border-color: transparent;
+			border: 0 none;
 			.menu-menu-principal-container{
 				ul#menu-menu-principal{
 					li{
 						a{
-							font-family: 'exo_2medium', sans-serif;
-							font-size: 13px;
+							font-family: 'exo_2bold', sans-serif;
+							font-size: 12px;
 							color: $color--green;
 							padding-top: 5px;
   							padding-bottom: 5px;
+						}
+						&.active{
+							a{
+								color: $color--orange;
+								background-color: $color--white;
+							}
 						}
 					}
 				}
 			}
 		}
+
+		.navbar-toggle {
+			.icon-bar{
+				background-color: $color--green !important;
+			}
+		}
+
 	}
+
 }
 
 @media(max-width: $screen-xs-max){}
@@ -159,6 +226,7 @@ header{
 			}
 		}
 		.navbar-collapse{
+			background-color: transparent;
 			.menu-menu-super-container{
 				ul#menu-menu-super{
 					padding-left: 180px;
@@ -170,6 +238,18 @@ header{
   							font-family: 'exo_2regular', sans-serif;
   							font-size: 10.5px;
 						}
+						&.active, &.open{
+							a{
+
+							}
+							ul{
+								li{
+									a{
+										color: $color--gray; 
+									}
+								}
+							}
+						}
 					}
 				}
 			}
@@ -178,6 +258,7 @@ header{
 					.search-form{
 						float: left;
 						margin-right: 15px;
+						width: auto;
 						label{}
 						.input-group{
 							input.search-field{
@@ -244,13 +325,7 @@ header{
 				ul#menu-menu-principal{
 					padding-left: 180px;
 					li{
-						a{
-							font-family: 'exo_2medium', sans-serif;
-							font-size: 13px;
-							color: $color--green;
-							padding-top: 5px;
-  							padding-bottom: 5px;
-						}
+						a{}
 					}
 				}
 			}
