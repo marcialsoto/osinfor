@@ -210,15 +210,37 @@ header{
 .slider{
 	#slider__main{
 		.owl-stage-outer{
+			background-color: $color--black;
 			.owl-stage{
 				.owl-item{
-					opacity: .25;
+					opacity: 0.25;
+					.item{
+						background-repeat: no-repeat;
+						background-position: top center;
+						-webkit-background-size: cover;
+						-moz-background-size: cover;
+						-o-background-size: cover;
+						background-size: cover;
+						margin: 0 auto;
+						height: 415px;
+					}
 					&.active{
 						&.center{
-							opacity: 1;
+							opacity: 1 !important;
 						}
 					}
+					
 				}
+			}
+		}
+
+		.owl-controls{
+			.owl-nav{
+				.owl-prev{}
+				.owl-next{}
+			}
+			.owl-dots{
+				.owl-dot{}
 			}
 		}
 	}
@@ -272,7 +294,7 @@ header{
 				}
 			}
 				.navbar-form{
-					margin: 4px 15px;
+					margin: 4px 0px;
 					.search-form{
 						float: left;
 						margin-right: 15px;

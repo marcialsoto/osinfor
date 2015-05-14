@@ -30,6 +30,8 @@
         // JavaScript to be fired on the home page
         $('#slider__main').owlCarousel({
           items:3,
+          nav: true,
+          navText: ["<span class='glyphicon glyphicon-menu-left' aria-hidden='true'></span>", "<span class='glyphicon glyphicon-menu-right' aria-hidden='true'></span>"],
           merge: true,
           center: true,
           lazyLoad:true,
