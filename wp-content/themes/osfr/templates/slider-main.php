@@ -26,8 +26,8 @@ $result->post_count = count( $result->posts );
 			<div class="item owl-lazy">
 		<?php } ?>
 				<article>
-					<div class="">
-						<h1 property="dc:title" datatype="" class="article-title"><?php the_title(); ?></h1>
+					<div class="post-header">
+						<h1 property="dc:title" datatype="" class="article-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 					</div>
 					<div class="post-content">
 						<?php the_excerpt(); ?>

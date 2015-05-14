@@ -1,6 +1,5 @@
 header{
 	border: 0 none !important;
-
 	.navbar-toggle {
 		border-color: transparent !important;
 		padding: 0px;
@@ -168,6 +167,7 @@ header{
 		height: 30px;
 		text-transform: uppercase;
 		background-color: $color--green--light;
+		margin-bottom: 0px;
 		.navbar-header{
 
 		}
@@ -212,9 +212,11 @@ header{
 		.owl-stage-outer{
 			background-color: $color--black;
 			.owl-stage{
+		
 				.owl-item{
+					
 					opacity: 0.25;
-					.item{
+					.item{	
 						background-repeat: no-repeat;
 						background-position: top center;
 						-webkit-background-size: cover;
@@ -222,7 +224,62 @@ header{
 						-o-background-size: cover;
 						background-size: cover;
 						margin: 0 auto;
-						height: 415px;
+						height: 275px;
+						article{
+							height: 100%;
+							@include make-lg-column(12);
+							.post-header{
+								background-color: $color--black; 
+								padding: 15px 30px;
+								margin-right: -15px;
+								margin-left: -15px;
+								h1{
+									position: relative;
+									z-index: 4;
+									font-size: 1.15em;
+									line-height: 1.15em;
+									margin:0; 
+									padding: 0;
+									color: $color--white;
+									text-transform: uppercase;
+  									text-shadow: 0 1px 1px rgba(0,0,0,.4),0 2px 20px rgba(0,0,0,.3);
+  									a{
+  										color: $color--white;
+  									}
+								}
+							}
+							.post-content{
+								position: relative;
+								z-index: 4;
+								padding: 30px 15px;
+								color: $color--white;
+								text-shadow: 0 1px 1px rgba(0,0,0,.4),0 2px 20px rgba(0,0,0,.3);
+								a{
+									font-weight: bold;
+									color: $color--yellow;
+									display: block;
+									margin: 15px 0;
+								}
+							}
+						
+							&:after{
+								display: block;
+								content: '';
+								position: absolute;
+								bottom: 0;
+								left: 0;
+								right: 0;
+								height: 100%;
+								z-index: 2;
+								opacity: .8;
+								background: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(0,0,0,.1)),color-stop(100%,rgba(0,0,0,.75)));
+								background: -webkit-linear-gradient(top,rgba(0,0,0,.1) 0,rgba(0,0,0,.75) 100%);
+								background: -o-linear-gradient(top,rgba(0,0,0,.1) 0,rgba(0,0,0,.75) 100%);
+								background: -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.1)),to(rgba(0,0,0,.75)));
+								background: linear-gradient(to bottom,rgba(0,0,0,.1) 0,rgba(0,0,0,.75) 100%);
+								filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000', GradientType=0 );
+							}
+						}
 					}
 					&.active{
 						&.center{
