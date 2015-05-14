@@ -28,6 +28,24 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
+        $('#slider__main').owlCarousel({
+          items:3,
+          merge: true,
+          center: true,
+          lazyLoad:true,
+          loop:true,
+              responsive:{
+                0:{
+                  items:1,
+                },
+                678:{
+                    mergeFit:true
+                },
+                1000:{
+                    mergeFit:false
+                }
+          }
+        });
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

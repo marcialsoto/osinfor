@@ -10,9 +10,17 @@
     "modernizr": "2.8.2",
     "jquery": "1.11.2",
     "bootstrap-sass-official": "3.3.4",
-    "font-awesome": "~4.3.0"
+    "font-awesome": "~4.3.0",
+    "owl-carousel2": "*"
   },
   "overrides": {
+    "owl-carousel2": {
+      "main": [
+        "./dist/assets/owl.carousel.css",
+        "./dist/assets/owl.theme.default.css",
+        "./dist/owl.carousel.js"
+      ]
+    },
     "modernizr": {
       "main": "./modernizr.js"
     },
