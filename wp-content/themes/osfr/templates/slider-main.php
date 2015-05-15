@@ -25,7 +25,7 @@ $result->post_count = count( $result->posts );
 		<?php } else { ?>
 			<div class="item owl-lazy">
 		<?php } ?>
-				<article>
+				<article class="animated fadeIn">
 					<div class="post-header">
 						<h1 property="dc:title" datatype="" class="article-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 					</div>

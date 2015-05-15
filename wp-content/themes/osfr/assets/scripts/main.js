@@ -34,6 +34,9 @@
           navText: ["<span class='glyphicon glyphicon-menu-left' aria-hidden='true'></span>", "<span class='glyphicon glyphicon-menu-right' aria-hidden='true'></span>"],
           merge: true,
           center: true,
+          autoplay: true,
+          autoplayTimeout: 7000,
+          autoplayHoverPause: true,
           lazyLoad:true,
           loop:true,
               responsive:{
