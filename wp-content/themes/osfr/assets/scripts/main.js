@@ -42,6 +42,7 @@
               responsive:{
                 0:{
                   items:1,
+                  dots: false,
                 },
                 678:{
                     mergeFit:true

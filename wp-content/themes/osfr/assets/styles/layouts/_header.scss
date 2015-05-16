@@ -294,19 +294,26 @@ header{
 			width: 100%;
 			height: 0;
 			margin: 0;
+			top: 50%;
 			.owl-nav{
 				@include make-lg-column(12);
-				.owl-prev{}
-				.owl-next{}
-			}
-			.owl-dots{
-				position: absolute;
-				width: auto;
-				height: 0;
-				margin: 0;
-				top: -200px;
-				left: 50%;
-				.owl-dot{}
+				.owl-prev, .owl-next{
+					background-color: $color--yellow;
+					color: $color--white;
+					&:hover{
+						background-color: $color--white;
+						color: $color--yellow;
+					}
+				}
+
+				.owl-prev{
+					left: 0;
+					float: left;
+				}
+				.owl-next{
+					right: 0;
+					float: right;
+				}
 			}
 		}
 	}
@@ -514,6 +521,8 @@ header{
 						}
 						
 					}
+
+
 				}
 			}
 
@@ -521,14 +530,75 @@ header{
 				top: 50%;
 				.owl-nav{
   					float: none;
-					.owl-prev{ position: relative; left: 5%; float: left; }
-					.owl-next{ position: relative; right: 5%; float: right; }
-				}
-				.owl-dots{
-					.owl-dot{
-						
+					.owl-prev{ 
+						position: relative; opacity: 0; left: 5%; float: left; 
+						-webkit-animation-duration: 1s;
+						animation-duration: 1s;
+						-webkit-animation-fill-mode: both;
+						animation-fill-mode: both;
+						-webkit-animation-name: fadeOutLeft;
+						animation-name: fadeOutLeft;
+					}
+					.owl-next{ 
+						position: relative; opacity: 0; right: 5%; float: right; 
+						-webkit-animation-duration: 1s;
+						animation-duration: 1s;
+						-webkit-animation-fill-mode: both;
+						animation-fill-mode: both;
+						-webkit-animation-name: fadeOutRight;
+						animation-name: fadeOutRight;
 					}
 				}
+				.owl-dots{
+					position: relative;
+					width: auto;
+					height: 0;
+					margin: 0 auto;
+					top: -200px;
+					.owl-dot{
+						&:hover{
+							span{
+								opacity: 0.50;
+							}	
+						}
+						span{
+							background-color: $color--white;
+						}
+						&.active{
+							span{
+							background-color: $color--yellow;
+								&:hover{
+								opacity: 1;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			&:hover{
+				.owl-controls{
+					.owl-nav{
+						.owl-prev{
+							-webkit-animation-duration: 1s;
+							animation-duration: 1s;
+							-webkit-animation-fill-mode: both;
+							animation-fill-mode: both;
+							-webkit-animation-name: fadeInLeft;
+							animation-name: fadeInLeft;
+							opacity: 1;
+						}
+						.owl-next{ 
+							-webkit-animation-duration: 1s;
+							animation-duration: 1s;
+							-webkit-animation-fill-mode: both;
+							animation-fill-mode: both;
+							-webkit-animation-name: fadeInRight;
+							animation-name: fadeInRight;
+							opacity: 1;
+						}
+					}
+				}		
 			}
 		}
 	}
