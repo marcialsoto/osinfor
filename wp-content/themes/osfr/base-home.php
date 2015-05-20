@@ -17,18 +17,21 @@ use Roots\Sage\Wrapper;
       get_template_part('templates/header');
     ?>
     <div class="wrap slider" role="document">
-		<?php get_template_part('templates/slider', 'main'); ?>
+		  <?php get_template_part('templates/slider', 'main'); ?>
     </div>
-    <div class="wrap container" role="document">
+    <div class="wrap container feeds" role="document">
       <div class="content row">
         <main class="main" role="main">
-          <?php include Wrapper\template_path(); ?>
+          <?php get_template_part('templates/feed', 'noticias'); ?>
         </main><!-- /.main -->
-        <?php if (Config\display_sidebar()) : ?>
-          <aside class="sidebar" role="complementary">
-            <?php include Wrapper\sidebar_path(); ?>
+
+          <aside class="sidebar sidebar--1" role="complementary">
+            Sidebar 1
           </aside><!-- /.sidebar -->
-        <?php endif; ?>
+          <aside class="sidebar sidebar--2" role="complementary">
+            Sidebar 2
+          </aside><!-- /.sidebar -->
+
       </div><!-- /.content -->
     </div><!-- /.wrap -->
     <?php

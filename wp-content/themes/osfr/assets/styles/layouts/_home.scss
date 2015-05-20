@@ -1,0 +1,33 @@
+.home{
+	.content{
+		.main{
+			@include make-sm-column(6);
+			.noticias{
+				.page-header{
+
+				}
+				.media-list{
+					.media{}
+					.media-left{}
+					.media-body{
+						.media-info{
+							text-transform: uppercase;
+							font-size: 10px;
+							color: $color--gray;
+						}
+						h4.media-heading{
+							font-family: 'exo_2medium', sans-serif;
+							font-size: 14px; 
+							line-height: 20px;
+						}
+					}
+				}
+			}
+		}
+		.sidebar{
+			@include make-sm-column(3);
+			&.sidebar--1{}
+			&.sidebar--1{}
+		}
+	}
+}

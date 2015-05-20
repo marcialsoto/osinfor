@@ -1,6 +1,6 @@
 <?php 
 // argumentos
-$post_args = array( 'post_type' => 'post', 'tag' => 'destacado', 'posts_per_page' => -1 );
+$post_args = array( 'post_type' => 'post', 'tag' => 'Destacado', 'posts_per_page' => -1 );
 $docs_args = array( 'post_type' => 'documentos', 'etiquetas' => 'Destacado', 'posts_per_page' => -1 );
 
 // the query
@@ -44,4 +44,3 @@ $result->post_count = count( $result->posts );
 <?php else : ?>
 	<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
 <?php endif; ?>
-
