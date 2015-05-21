@@ -43,11 +43,15 @@ h3, h4, h4, h6{
 	font-family: 'exo_2medium', sans-serif;
 }
 
+.single p{
+    text-align: justify;
+}
+
 @media(max-width: $screen-xs-max){}
 @media(min-width: $screen-sm-min){}
 @media(min-width: $screen-md-min){
     .container{
-        width: 970px; 
+       /* width: 970px; */
     }
 }
 @media(min-width: $screen-lg-min){}

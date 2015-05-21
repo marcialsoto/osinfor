@@ -27,8 +27,8 @@
       <div class="navbar-form navbar-search navbar-right">
             <?php $echo = true; get_search_form( $echo ); ?>
             <ul class="social__nav list-inline">
-              <li id="fb"><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li id="tw"><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li id="fb"><a href="https://www.facebook.com/osinfor" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li id="tw"><a href="https://www.youtube.com/user/osinfor" target="_blank"><i class="fa fa-youtube"></i></a></li>
             </ul>
       </div>
     </nav>

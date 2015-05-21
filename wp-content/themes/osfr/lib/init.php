@@ -20,7 +20,8 @@ function setup() {
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
   register_nav_menus([
     'primary_navigation' => __('Primary Navigation', 'sage'),
-    'super_navigation' => __('Super Navigation', 'sage')
+    'super_navigation' => __('Super Navigation', 'sage'),
+    'nosotros_navigation' => __('Nosotros Navigation', 'sage')
   ]);
 
   // Add post thumbnails
@@ -56,12 +57,37 @@ function widgets_init() {
   ]);
 
   register_sidebar([
-    'name'          => __('Footer', 'sage'),
-    'id'            => 'sidebar-footer',
+    'name'          => __('Eventos', 'sage'),
+    'id'            => 'sidebar-eventos',
     'before_widget' => '<section class="widget %1$s %2$s">',
     'after_widget'  => '</section>',
     'before_title'  => '<h3>',
     'after_title'   => '</h3>'
+  ]);
+
+  register_sidebar([
+    'name'          => __('Footer 1', 'sage'),
+    'id'            => 'sidebar-1',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h4>',
+    'after_title'   => '</h4>'
+  ]);
+    register_sidebar([
+    'name'          => __('Footer 2', 'sage'),
+    'id'            => 'sidebar-2',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h4>',
+    'after_title'   => '</h4>'
+  ]);
+      register_sidebar([
+    'name'          => __('Footer 3', 'sage'),
+    'id'            => 'sidebar-3',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h4>',
+    'after_title'   => '</h4>'
   ]);
 }
 add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
