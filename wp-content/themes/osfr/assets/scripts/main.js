@@ -52,6 +52,26 @@
                 }
           }
         });
+
+        $('#slider__footer').owlCarousel({
+          items: 5,
+          margin: 60,
+          loop: true,
+          center: true,
+          autoWidth: true,
+          lazyLoad: true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:5
+              },
+              1000:{
+                  items:5
+              }
+          }
+        });
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

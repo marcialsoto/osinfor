@@ -1,3 +1,8 @@
+<div class="pre__footer">
+	<div class="container">
+		<?php get_template_part('templates/slider', 'footer'); ?>
+	</div>
+</div>
 <footer class="content-info" role="contentinfo">
     <div class="footer__brand">
 		<div class="container">
