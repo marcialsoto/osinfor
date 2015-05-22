@@ -55,7 +55,8 @@
 
         $('#slider__footer').owlCarousel({
           items: 5,
-          margin: 60,
+          dots: false,
+          margin: 55,
           loop: true,
           center: true,
           autoWidth: true,
