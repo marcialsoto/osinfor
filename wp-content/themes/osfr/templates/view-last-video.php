@@ -8,7 +8,7 @@ $the_query = new WP_Query( $args ); ?>
 	<!-- pagination here -->
 
 	<div class="page-header">
-		<h3>Video del Día</h4>
+		<h4>Video del Día</h4>
 	</div>
 
 		<!-- the loop -->
@@ -22,13 +22,13 @@ $the_query = new WP_Query( $args ); ?>
 				</div>
 				<?php } ?>
 				<div class="video-body">
+					<?php get_template_part('templates/entry-meta'); ?>
 					<h4 class="media-heading">
 						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 							<?php the_title(); ?>
 						</a>
 					</h4>
 					<div class="media-info">
-						<?php get_template_part('templates/entry-meta'); ?>
 						<p><a href="<?php echo bloginfo('url'); ?>/formatos/videos">Más videos  <i class="fa fa-angle-double-right"></i></a>
 					</div>
 				</div>	

@@ -11,9 +11,6 @@
 					.media-left{}
 					.media-body{
 						.media-info{
-							text-transform: uppercase;
-							font-size: 10px;
-							color: $color--gray;
 						}
 						h4.media-heading{
 							font-family: 'exo_2medium', sans-serif;
@@ -26,8 +23,77 @@
 		}
 		.sidebar{
 			@include make-sm-column(3);
-			&.sidebar--1{}
-			&.sidebar--1{}
+			&.sidebar-1{
+				.widget{
+					background-color: $color--brown--light;
+					padding: 15px;
+					.page-header{
+						border-bottom: 0;
+						margin: 0;
+					}
+				}
+			}
+			&.sidebar-2{
+				.banner{
+					@include make-row;
+					.banner__item{
+						@include make-sm-column(12);
+						margin-bottom: 15px;
+					}						
+				}
+			}
+		}
+	}
+
+	.section{
+		&.multimedia{
+			.multimedia-content{
+				h4.media-heading{
+					@include exo_2(regular);
+					a{
+						color: $color--gray;
+					}
+				}
+				img{
+					border: 1px solid $color--brown;
+				}
+				.page-header{
+					border-bottom: 0;
+					padding-bottom: 0;
+					h4{
+						margin: 0;
+						padding: 0;
+					}
+				}
+				.video-content{
+					.video-img{
+						position: relative;
+						a{
+							color: $color--brown;
+							@include opacity(0.9);
+							&:hover{
+								@include opacity(1);
+							}
+						}
+					}
+					.video-body{
+						padding: 7px 0;
+
+					}
+				}
+
+				.social-links{
+
+				}
+				.last-photo{
+					.photo-img{
+						position: relative;
+					}
+					.photo-body{
+						padding: 7px 0;
+					}
+				}
+			}
 		}
 	}
 }

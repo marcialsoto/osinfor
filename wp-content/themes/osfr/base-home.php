@@ -19,22 +19,25 @@ use Roots\Sage\Wrapper;
     <div class="wrap slider" role="document">
 		  <?php get_template_part('templates/slider', 'main'); ?>
     </div>
-    <div class="wrap container feeds" role="document">
-      <div class="content row">
-        <main class="main" role="main">
+    <div class="wrap section feeds" role="document">
+      <div class="container">
+        <div class="content row">
+          <main class="main" role="main">
           <?php get_template_part('templates/view', 'noticias'); ?>
-        </main><!-- /.main -->
+          </main><!-- /.main -->
 
-          <aside class="sidebar sidebar--1" role="complementary">
-            Sidebar 1
+          <aside class="sidebar sidebar-1" role="complementary">
+          <?php dynamic_sidebar('sidebar-eventos'); ?>
           </aside><!-- /.sidebar -->
-          <aside class="sidebar sidebar--2" role="complementary">
-            Sidebar 2
+          
+          <aside class="sidebar sidebar-2" role="complementary">
+          <?php get_template_part('templates/section', 'home-sidebar'); ?>
           </aside><!-- /.sidebar -->
 
-      </div><!-- /.content -->
+        </div><!-- /.content -->
+      </div>
     </div><!-- /.wrap -->
-    <div class="wrap" role="document">
+    <div class="wrap section multimedia" role="document">
       <div class="container">
         <?php get_template_part('templates/section', 'multimedia'); ?>
       </div>
