@@ -36,3 +36,4 @@ add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');
  * Custom image sizes
  */
 add_image_size( 'thumb-news', 160, 90, array( 'left', 'top' ) ); // Hard crop left top
+add_image_size( 'thumb-last-video', 360, 215, array( 'left', 'top' ) ); // Hard crop left top

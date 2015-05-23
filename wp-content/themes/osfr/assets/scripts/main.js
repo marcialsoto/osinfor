@@ -19,6 +19,26 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        $('#slider__footer').owlCarousel({
+          items: 5,
+          dots: false,
+          margin: 55,
+          loop: true,
+          center: true,
+          autoWidth: true,
+          lazyLoad: true,
+          responsive:{
+              0:{
+                  items:1
+              },
+              600:{
+                  items:5
+              },
+              1000:{
+                  items:5
+              }
+          }
+        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -50,27 +70,6 @@
                 1000:{
                     mergeFit:false
                 }
-          }
-        });
-
-        $('#slider__footer').owlCarousel({
-          items: 5,
-          dots: false,
-          margin: 55,
-          loop: true,
-          center: true,
-          autoWidth: true,
-          lazyLoad: true,
-          responsive:{
-              0:{
-                  items:1
-              },
-              600:{
-                  items:5
-              },
-              1000:{
-                  items:5
-              }
           }
         });
       },

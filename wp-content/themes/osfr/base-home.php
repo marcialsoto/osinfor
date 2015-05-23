@@ -22,7 +22,7 @@ use Roots\Sage\Wrapper;
     <div class="wrap container feeds" role="document">
       <div class="content row">
         <main class="main" role="main">
-          <?php get_template_part('templates/feed', 'noticias'); ?>
+          <?php get_template_part('templates/view', 'noticias'); ?>
         </main><!-- /.main -->
 
           <aside class="sidebar sidebar--1" role="complementary">
@@ -34,6 +34,11 @@ use Roots\Sage\Wrapper;
 
       </div><!-- /.content -->
     </div><!-- /.wrap -->
+    <div class="wrap" role="document">
+      <div class="container">
+        <?php get_template_part('templates/section', 'multimedia'); ?>
+      </div>
+    </div>
     <?php
       get_template_part('templates/footer');
       wp_footer();

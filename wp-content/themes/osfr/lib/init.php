@@ -21,6 +21,7 @@ function setup() {
   register_nav_menus([
     'primary_navigation' => __('Primary Navigation', 'sage'),
     'super_navigation' => __('Super Navigation', 'sage'),
+    'social_navigation' => __('Social Navigation', 'sage'),
     'nosotros_navigation' => __('Nosotros Navigation', 'sage')
   ]);
 
