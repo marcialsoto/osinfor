@@ -19,6 +19,15 @@ use Roots\Sage\Wrapper;
     <div class="wrap slider" role="document">
 		  <?php get_template_part('templates/slider', 'main'); ?>
     </div>
+    <div class="wrap nav__gestion">
+      <nav class="gestion__nav container">
+             <?php
+              if (has_nav_menu('gestion_navigation')) :
+                wp_nav_menu(['theme_location' => 'gestion_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'nav nav-justified']);
+              endif;
+              ?>
+          </nav>
+    </div>
     <div class="wrap section feeds" role="document">
       <div class="container">
         <div class="content row">

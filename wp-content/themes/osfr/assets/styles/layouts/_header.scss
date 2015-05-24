@@ -124,27 +124,41 @@ header{
 							}
 						}
 					}
-					.social__nav{
+
+					.menu-menu-social-container{
 						float: left;
-						margin-bottom: 0;
-						li{
-							padding-left: 1px;
-							padding-right: 1px;
-							a{
-								padding: 2px 7px; 
-								color: $color--white;
-								i{
-									font-size: 10px;
-								}
-							}
-							&#fb{
+						margin: 0; 
+						.social__nav{
+							float: left;
+							margin-bottom: 0;
+							li{
+								padding-left: 1px;
+								padding-right: 1px;
 								a{
-									background-color: $color--fb;
+									padding: 0px 7px; 
+									width: 100%;
+									display: block;
+									color: $color--white;
+									background-color: $color--black;
+									span{ display: none; }
+									i{
+										font-size: 12px;
+									}
 								}
-							}
-							&#tw{
-								a{
-									background-color: $color--tw;
+								&#menu-item-567{
+									a{
+										background-color: $color--fb;
+									}
+								}
+								&#menu-item-568{
+									a{
+										background-color: $color--tw;
+									}
+								}
+								&#menu-item-569{
+									a{
+										background-color: $color--yt;
+									}
 								}
 							}
 						}
@@ -363,7 +377,7 @@ header{
 				background-color: transparent;
 				.menu-menu-super-container{
 					ul#menu-menu-super{
-						padding-left: 180px;
+						
 						li{
 							a{
 								padding-top: 5px;
@@ -390,6 +404,7 @@ header{
 					.navbar-form{
 						margin: 4px 0px;
 						.search-form{
+						padding-left: 195px;
 							float: left;
 							margin-right: 15px;
 							width: auto;
@@ -424,8 +439,13 @@ header{
 								a{
 									padding: 2px 7px; 
 									color: $color--white;
+									text-decoration: none; 
+									@include opacity (.85);
+									&:hover{
+										@include opacity (1);
+									}
 									i{
-										font-size: 10px;
+										font-size: 12px;
 									}
 								}
 								&#fb{

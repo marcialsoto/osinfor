@@ -19,18 +19,22 @@
     </div>
  
     <nav class="collapse navbar-collapse collapse__super" role="navigation">
+      <div class="navbar-form navbar-search navbar-left">
+            <?php $echo = true; get_search_form( $echo ); ?>
+            <?php
+            if (has_nav_menu('social_navigation')) :
+              wp_nav_menu(['theme_location' => 'social_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'social__nav list-inline']);
+            endif;
+            ?>
+
+      </div>
+      <div class="navbar-right">
       <?php
       if (has_nav_menu('super_navigation')) :
         wp_nav_menu(['theme_location' => 'super_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'nav navbar-nav']);
       endif;
       ?>
-      <div class="navbar-form navbar-search navbar-right">
-            <?php $echo = true; get_search_form( $echo ); ?>
-            <ul class="social__nav list-inline">
-              <li id="fb"><a href="https://www.facebook.com/osinfor" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li id="tw"><a href="https://www.youtube.com/user/osinfor" target="_blank"><i class="fa fa-youtube"></i></a></li>
-            </ul>
-      </div>
+    </div>
     </nav>
   </div>
 </header>

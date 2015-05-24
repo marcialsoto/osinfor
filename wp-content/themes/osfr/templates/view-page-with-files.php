@@ -28,13 +28,13 @@ $the_query = new WP_Query( $args ); ?>
         </thead>
 		<!-- the loop -->
 		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-		<?php $nrm_compl = get_field('nrm_compl'); ?>
+		<?php $nrm_compl = get_field('nrm_compl'); $doc_type = get_field('doc_type'); ?>
 			<tr>
 			<td>
 				<?php if( $nrm_compl ) { ?>
 					<span class="label label-default">Norma Complementaria</span>
 				<?php } ?>
-				<h5><?php the_title(); ?></h5>
+				<h5><i class="fa fa-file-<?php echo $doc_type; ?>-o"></i> <?php the_title(); ?></h5>
 			</td>
 			<td><?php get_template_part('templates/entry-meta'); ?></td>
 			<td><?php the_content(); ?></td>

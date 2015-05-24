@@ -22,7 +22,10 @@ function setup() {
     'primary_navigation' => __('Primary Navigation', 'sage'),
     'super_navigation' => __('Super Navigation', 'sage'),
     'social_navigation' => __('Social Navigation', 'sage'),
-    'nosotros_navigation' => __('Nosotros Navigation', 'sage')
+    'nosotros_navigation' => __('Nosotros Navigation', 'sage'),
+    'normatividad_navigation' => __('Normatividad Navigation', 'sage'),
+    'gestion_navigation' => __('Gestión Navigation', 'sage'),
+    'comunicacion_navigation' => __('Comunicación Navigation', 'sage')
   ]);
 
   // Add post thumbnails
