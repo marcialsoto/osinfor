@@ -19,6 +19,8 @@ $the_query = new WP_Query( $args ); ?>
 						$args = array(
 							'post_type' => 'attachment',
 							'numberposts' => 2,
+							'orderby' => 'ID',
+							'order' => 'ASC',
 							'post_status' => null,
 							'post_parent' => $post->ID
 						);

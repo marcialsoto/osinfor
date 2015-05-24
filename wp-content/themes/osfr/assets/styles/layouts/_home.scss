@@ -7,15 +7,32 @@
 
 				}
 				.media-list{
-					.media{}
-					.media-left{}
-					.media-body{
-						.media-info{
+					.media{
+						&:hover{
+							.media-left{
+							a{
+							img{
+									border: 1px solid $color--black;
+							}}}
 						}
-						h4.media-heading{
-							font-family: 'exo_2medium', sans-serif;
-							font-size: 14px; 
-							line-height: 20px;
+						.media-left{
+							a{
+								img{
+									border: 1px solid $color--brown;
+								}
+							}
+						}
+						.media-body{
+							.media-info{
+							}
+							h4.media-heading{
+								font-family: 'exo_2medium', sans-serif;
+								font-size: 14px; 
+								line-height: 20px;
+								a{
+									color: $color--brown;
+								}
+							}
 						}
 					}
 				}

@@ -191,6 +191,27 @@ header{
 								background-color: $color--white;
 							}
 						}
+						
+						ul.dropdown-menu{
+							box-shadow: none;
+							border-radius: 0;
+							li{
+								a{
+									@include exo_2(regular);	
+								}
+							}
+							li.menu-item-has-children.dropdown{
+								&:hover{
+									ul.dropdown-menu{
+										display: block;
+										top: 0;
+										left: 100%;
+										text-transform: none;
+									}
+								}
+							}
+						}
+
 					}
 				}
 			}
