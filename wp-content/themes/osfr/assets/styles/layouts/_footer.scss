@@ -98,6 +98,31 @@
 	}
 }
 
+.content-info{
+	a{color: $color--gray;}
+	
+	.footer__brand{
+		.footer__logo{
+			.menu-menu-social-container{
+				@include make-row;
+				max-width: 195px;
+				text-align: center;
+				.social__nav{
+					@include center-block();
+					li{
+						a{
+							font-size: 18px;
+							span{
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 @media(max-width: $screen-xs-max){}
 /* deprecated: $screen-tablet, or $screen-sm */
 @media(min-width: $screen-sm-min){

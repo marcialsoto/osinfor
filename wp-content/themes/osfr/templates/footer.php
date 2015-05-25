@@ -7,9 +7,19 @@
     <div class="footer__brand">
 		<div class="container">
 	    	<div class="footer__logo">
+	    		<div class="row">
 				<h1 class="logo">
 					<a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>"><span><?php bloginfo('name'); ?></span></a>
 				</h1>
+				</div>
+				<div class="row">
+					<?php
+						if (has_nav_menu('social_navigation')) :
+							wp_nav_menu(['theme_location' => 'social_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'social__nav list-inline']);
+						endif;
+					?>
+				</div>
+				
 	    	</div>
 			<div class="footer__sidedar footer-1">
 				<?php dynamic_sidebar( 'footer-1' ); ?>

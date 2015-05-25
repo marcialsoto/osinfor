@@ -39,6 +39,13 @@
               }
           }
         });
+
+        $( 'ul.menu>li.menu-item-has-children>a' ).click(function() {
+          event.preventDefault();
+          $( 'ul.sub-menu' ).toggle( 'fast' );
+        });
+
+        $( "ul.menu>li.menu-item-has-children>a" ).append( "<span class='caret'></span>" );
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

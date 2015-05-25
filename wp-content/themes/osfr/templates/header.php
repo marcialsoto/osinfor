@@ -26,7 +26,6 @@
               wp_nav_menu(['theme_location' => 'social_navigation', 'walker' => new wp_bootstrap_navwalker(), 'menu_class' => 'social__nav list-inline']);
             endif;
             ?>
-
       </div>
       <div class="navbar-right">
       <?php

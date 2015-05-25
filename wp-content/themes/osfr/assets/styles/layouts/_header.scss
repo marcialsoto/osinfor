@@ -202,7 +202,7 @@ header{
 						&.active{
 							a{
 								color: $color--orange;
-								background-color: $color--white;
+								background-color: $color--white--smoke;
 							}
 						}
 						
@@ -333,11 +333,11 @@ header{
 			.owl-nav{
 				@include make-lg-column(12);
 				.owl-prev, .owl-next{
-					background-color: $color--yellow;
-					color: $color--white;
+					background-color: $color--orange;
+					color: $color--orange--light;
 					&:hover{
-						background-color: $color--white;
-						color: $color--yellow;
+						background-color: $color--orange--light;
+						color: $color--orange;
 					}
 				}
 

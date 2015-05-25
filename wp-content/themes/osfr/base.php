@@ -19,7 +19,9 @@ use Roots\Sage\Wrapper;
     <div class="wrap container" role="document">
       <div class="content row">
         <main class="main" role="main">
-          <?php include Wrapper\template_path(); ?>
+          <div class="inner">
+            <?php include Wrapper\template_path(); ?>
+          </div>
         </main><!-- /.main -->
         <?php if (Config\display_sidebar()) : ?>
           <aside class="sidebar" role="complementary">
