@@ -46,6 +46,13 @@ use Roots\Sage\Wrapper;
         </div><!-- /.content -->
       </div>
     </div><!-- /.wrap -->
+
+    <div class="wrap section publicaciones">
+      <div class="container">
+        <?php get_template_part('templates/section', 'publicaciones'); ?>
+      </div>
+    </div>
+
     <div class="wrap section multimedia" role="document">
       <div class="container">
         <?php get_template_part('templates/section', 'multimedia'); ?>

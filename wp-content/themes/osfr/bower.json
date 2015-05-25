@@ -12,7 +12,8 @@
     "bootstrap-sass-official": "3.3.4",
     "font-awesome": "~4.3.0",
     "owl-carousel2": "*",
-    "animate-css": "~3.2.6"
+    "animate-css": "~3.2.6",
+    "lightbox2": "~2.7.1"
   },
   "overrides": {
     "owl-carousel2": {
@@ -20,6 +21,12 @@
         "./dist/assets/owl.carousel.css",
         "./dist/assets/owl.theme.default.css",
         "./dist/owl.carousel.js"
+      ]
+    },
+    "lightbox2": {
+      "main": [
+        "./css/lightbox.css",
+        "./js/lightbox.js"
       ]
     },
     "modernizr": {

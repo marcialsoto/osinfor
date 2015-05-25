@@ -48,6 +48,8 @@
         $( "ul.dropdown-menu>li.menu-item-has-children>a" ).append( "<span class='caret'></span>" );
         $( "ul.menu>li.menu-item-has-children>a" ).append( "<span class='caret'></span>" );
 
+        $( '.gallery>dl>dt>a' ).attr('data-lightbox', 'gallery');
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -81,6 +83,12 @@
                 }
           }
         });
+
+        $('#slider__publicaciones').owlCarousel({
+          items:3,
+          loop:false,
+          margin:30
+      });
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS

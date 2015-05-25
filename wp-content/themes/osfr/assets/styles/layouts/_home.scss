@@ -113,5 +113,13 @@
 				}
 			}
 		}
+
+		&.publicaciones{
+			background-color: $color--green--lime;
+			.page-header, .page-header--sub{
+				border-bottom: 0;
+				text-align: center;
+			}
+		}
 	}
 }

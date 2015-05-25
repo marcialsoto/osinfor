@@ -135,8 +135,9 @@ header{
 								padding-left: 1px;
 								padding-right: 1px;
 								a{
-									padding: 0px 7px; 
-									width: 100%;
+									width: 20px;
+									height: 20px;
+									text-align: center;
 									display: block;
 									color: $color--white;
 									background-color: $color--black;
@@ -437,7 +438,6 @@ header{
 								padding-left: 1px;
 								padding-right: 1px;
 								a{
-									padding: 2px 7px; 
 									color: $color--white;
 									text-decoration: none; 
 									@include opacity (.85);

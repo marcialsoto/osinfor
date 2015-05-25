@@ -18,7 +18,7 @@ $sage_includes = [
   'lib/assets.php',                // Scripts and stylesheets
   'lib/titles.php',                // Page titles
   'lib/extras.php',                // Custom functions
-  'lib/wp_bootstrap_navwalker.php' // BS Nav Walker: https://github.com/twittem/wp-bootstrap-navwalker
+  'lib/wp_bootstrap_navwalker.php', // BS Nav Walker: https://github.com/twittem/wp-bootstrap-navwalker
 ];
 
 foreach ($sage_includes as $file) {
