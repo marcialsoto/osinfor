@@ -8,7 +8,7 @@ $the_query = new WP_Query( $args ); ?>
 	<!-- pagination here -->
 <div class="noticias">
 	<div class="page-header">
-		<h3>Noticias</h4>
+		<h3>Noticias<a class="pull-right" href="<?php echo bloginfo( 'url' ); ?>/category/notas-de-prensa"><small>Ver todas <i class="fa fa-angle-double-right"></i></small></a></h4>
 	</div>
 
 	<ul class="media-list">

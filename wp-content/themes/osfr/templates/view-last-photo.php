@@ -31,7 +31,7 @@ $the_query = new WP_Query( $args ); ?>
 								echo '<a href="';
 								the_permalink();
 								echo '">';
-								echo wp_get_attachment_image( $attachment->ID, 'full' );
+								echo wp_get_attachment_image( $attachment->ID, 'full', '' , array('class'=>'img-responsive') );
 								echo '</a>';
 							}
 						}				

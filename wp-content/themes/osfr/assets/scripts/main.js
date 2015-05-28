@@ -50,6 +50,10 @@
 
         $( '.gallery>dl>dt>a' ).attr('data-lightbox', 'gallery');
 
+        $(function () {
+          $('[data-toggle="tooltip"]').tooltip();
+        });
+
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -84,10 +88,27 @@
           }
         });
 
-        $('#slider__publicaciones').owlCarousel({
-          items:3,
-          loop:false,
-          margin:30
+        $('.slider__publicaciones').owlCarousel({
+          items: 3,
+          loop: false,
+          margin: 30, 
+          responsive : {
+            // breakpoint from 0 up
+            0 : {
+                items: 1
+            },
+            // breakpoint from 480 up
+            480 : {
+                items: 2
+            },
+            // breakpoint from 768 up
+            768 : {
+                items: 2
+            },
+            1000 : {
+              items: 3
+            }
+        }
       });
       },
       finalize: function() {

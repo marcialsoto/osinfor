@@ -1,0 +1,10 @@
+.single{
+	figure{
+		background-color: $color--brown--lighter;
+		margin-top: 15px;
+		margin-bottom: 15px;
+		.img-responsive{
+			@include center-block();
+		}
+	}
+}

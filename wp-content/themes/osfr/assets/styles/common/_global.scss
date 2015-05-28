@@ -117,15 +117,18 @@ time.updated{
       padding-bottom: 3px;
 }
 
-.category-notas-de-prensa{
-    time{
-        text-transform: none !important;
-        @include exo_2(bold);
-        font-size: 16px !important;
-        margin: 15px 0 !important;
-        color: $color--gray;
+.single {
+    .category-notas-de-prensa{
+        time{
+            text-transform: none !important;
+            @include exo_2(bold);
+            font-size: 16px !important;
+            margin: 15px 0 !important;
+            color: $color--gray;
+        }
     }
 }
+
 
 ul.dropdown-menu{
     border-radius: 0;
@@ -178,7 +181,7 @@ ul.dropdown-menu{
 }
 
 .section{
-    padding: 30px 0 0;
+    padding: 30px 0 30px;
     .page-header{
         padding-bottom: 7px;
         margin: 15px 0;
