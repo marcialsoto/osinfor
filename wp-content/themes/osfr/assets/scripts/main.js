@@ -50,9 +50,9 @@
 
         $( '.gallery>dl>dt>a' ).attr('data-lightbox', 'gallery');
 
-        $(function () {
-          $('[data-toggle="tooltip"]').tooltip();
-        });
+        $('[data-toggle="tooltip"]').tooltip();
+
+        $('ul.page-numbers').addClass('pagination');
 
       },
       finalize: function() {

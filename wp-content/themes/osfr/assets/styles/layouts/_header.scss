@@ -29,15 +29,15 @@ header{
 			.header__logo{
 				background: $color--orange url(../images/all__logo--bg.png) no-repeat top center; 
 				position: relative;
-				width: 100px; 
-				height: 30px;
+				width: 130px; 
+				height: 50px;
 				overflow: hidden;
 				.logo{
 					margin: 0;
 					padding: 0;
 					a.navbar-brand{
-						width: 100px;
-						height: 30px;
+						width: 130px;
+						height: 50px;
 						display: inline-block;
 						line-height: 1;
 						margin: 0;
@@ -47,7 +47,7 @@ header{
 							position: relative;
 							display: block;
 							text-indent: 100%;
-							white-space: nowrap;
+							white-space: nowrap; 
 							overflow: hidden;
 							margin: 0;
 							padding: 0;
@@ -240,6 +240,19 @@ header{
 
 	}
 
+}
+
+.gestion__nav{
+	.collapse__gestion{
+		margin-right: -15px;
+ 		margin-left: -15px;
+	}
+	.navbar-toggle {
+		margin-right: 0;
+		.icon-bar{
+			background-color: $color--orange !important;
+		}
+	}
 }
 
 /* Main Slider */
@@ -607,7 +620,7 @@ header{
 						}
 						&.active{
 							span{
-							background-color: $color--yellow;
+							background-color: $color--orange;
 								&:hover{
 								opacity: 1;
 								}
