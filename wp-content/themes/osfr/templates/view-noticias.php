@@ -15,10 +15,11 @@ $the_query = new WP_Query( $args ); ?>
 		<!-- the loop -->
 		<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
 			<li class="media">
-				<?php if ( has_post_thumbnail() ) { ?>
+				<?php if (has_post_thumbnail( $post->ID ) ){ ?>
+				<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' ); ?>
 				<div class="media-left">
-					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-						<?php the_post_thumbnail( 'thumb-news' ); ?>
+					<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" style="background-image: url(<?php echo $image[0]; ?>); background-size: cover; background-position: center; background-repeat: no-repeat;">
+						<span><?php the_title(); ?></span>
 					</a>
 				</div>
 				<?php } ?>
@@ -28,9 +29,12 @@ $the_query = new WP_Query( $args ); ?>
 					</div>
 					<h4 class="media-heading">
 						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-							<?php the_title(); ?>
+							<?php the_short_title( 170, '...' ); ?>
 						</a>
 					</h4>
+					<div class="entry-summary">
+					    <a href="<?php the_permalink(); ?>" class="read-more">Leer más <i class="fa fa-angle-double-right"></i></a>
+					</div>
 				</div>	
 			</li>
 		<?php endwhile; ?>

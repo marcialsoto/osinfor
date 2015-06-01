@@ -13,6 +13,7 @@
     </div>
     <footer>
       <?php get_template_part('templates/entry-meta', 'news'); ?>
+      <?php get_template_part('templates/sharing', 'single'); ?>
     </footer>
   </article>
 <?php endwhile; ?>
