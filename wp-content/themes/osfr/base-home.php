@@ -47,10 +47,11 @@ use Roots\Sage\Wrapper;
 
           <aside class="sidebar sidebar-1" role="complementary">
           <?php dynamic_sidebar('sidebar-eventos'); ?>
+          <?php get_template_part('templates/section', 'home-sidebar'); ?>
           </aside><!-- /.sidebar -->
           
           <aside class="sidebar sidebar-2" role="complementary">
-          <?php get_template_part('templates/section', 'home-sidebar'); ?>
+          <?php get_template_part('templates/section', 'home-sidebar-2'); ?>
           </aside><!-- /.sidebar -->
 
         </div><!-- /.content -->

@@ -55,17 +55,7 @@
 		}
 		.sidebar{
 			@include make-sm-column(3);
-			&.sidebar-1{
-				.widget{
-					background-color: $color--brown--lighter;
-					padding: 15px;
-					.page-header{
-						border-bottom: 0;
-						margin: 0;
-					}
-				}
-			}
-			&.sidebar-2{
+			&.sidebar-1, &.sidebar-2{
 				.banner{
 					@include make-row;
 					.banner__item{
@@ -73,6 +63,56 @@
 						margin-bottom: 15px;
 					}						
 				}
+			}
+
+			&.sidebar-1{
+				.widget{
+					background-color: $color--brown--lighter;
+					padding: 15px;
+					
+					.page-header{
+						border-bottom: 0;
+						margin: 0;
+					}
+					&.tribe-events-list-widget{
+						margin-bottom: 15px;
+						.vcalendar{
+							padding-left: 0;
+							li{
+								h4{
+									margin-bottom: 3px;
+									a{
+										@include exo_2(regular);
+										color: $color--green;
+										font-size: 16px;
+									}
+								}
+								
+								.duration{
+									font-size: 11px;
+									color: $color--gray;
+									font-weight: normal;
+								}
+							}
+						}
+						p.tribe-events-widget-link{
+							margin: 0px -15px -15px;
+							padding: 7px 0;
+							background-color: $color--brown--cust;
+							text-align: center;
+							a{
+								@include exo_2(regular);
+								font-weight: normal;
+								position: relative;
+								display: block;
+								color: $color--brown;
+							}
+						}
+					}
+				}
+			}
+			&.sidebar-2{
+				
 			}
 		}
 	}

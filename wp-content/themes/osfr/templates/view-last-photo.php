@@ -16,6 +16,9 @@ $the_query = new WP_Query( $args ); ?>
 			<div class="photo-content">
 				<div class="photo-img">
 					<?php
+
+						global $post;
+
 						$args = array(
 							'post_type' => 'attachment',
 							'numberposts' => 2,
@@ -26,6 +29,7 @@ $the_query = new WP_Query( $args ); ?>
 						);
 
 						$attachments = get_posts( $args );
+						
 						if ( $attachments ) {
 							foreach ( $attachments as $attachment ) {
 								echo '<a href="';
