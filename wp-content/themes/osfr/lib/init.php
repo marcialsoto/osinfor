@@ -25,7 +25,8 @@ function setup() {
     'nosotros_navigation' => __('Nosotros Navigation', 'sage'),
     'normatividad_navigation' => __('Normatividad Navigation', 'sage'),
     'gestion_navigation' => __('Gestión Navigation', 'sage'),
-    'comunicacion_navigation' => __('Comunicación Navigation', 'sage')
+    'comunicacion_navigation' => __('Comunicación Navigation', 'sage'),
+    'transparencia_navigation' => __('Transparencia Navigation', 'sage')
   ]);
 
   // Add post thumbnails
