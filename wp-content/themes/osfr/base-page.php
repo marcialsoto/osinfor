@@ -25,7 +25,17 @@ use Roots\Sage\Wrapper;
         </main><!-- /.main -->
         <?php if (Config\display_sidebar()) : ?>
           <aside class="sidebar" role="complementary">
+          <?php if ( is_page( array( 'Contacto', 'Libro de Reclamaciones' ) ) ) { ?>
+            <?php dynamic_sidebar('sidebar-contacto'); ?>
+          <?php } elseif ( is_page( array( 'Quienes Somos', 'Visión y Misión', 'Funciones', 'Organigrama', 'Directorio' ) ) ) { ?>
+            <?php get_template_part('templates/nav-sidebar','nosotros'); ?>
+          <?php } elseif ( is_page( array( 'Normatividad', 'Normas para Supervisión a Tí­tulos Habilitantes' ))) { ?>
+            <?php get_template_part('templates/nav-sidebar','normatividad'); ?>
+          <?php } elseif ( is_page( array( 'Comunicación', 'Campañas Propagandísticas', 'Audiovisual/Radio/TV' ))) { ?>
+            <?php get_template_part('templates/nav-sidebar','comunicacion'); ?>
+          <?php } else { ?>
             <?php include Wrapper\sidebar_path(); ?>
+          <?php } ?>
           </aside><!-- /.sidebar -->
         <?php endif; ?>
       </div><!-- /.content -->
