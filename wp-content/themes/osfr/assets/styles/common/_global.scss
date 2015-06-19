@@ -56,21 +56,34 @@ body{
     margin-top: 30px;
     .inner{
         background-color: $color--white;
-        padding: 7px 30px 20px;
+        /*padding: 7px 30px 20px;*/
         margin: 0;
         .page-header{
+            background-color: $color--gray--light;
             margin-top: 0;
+            padding: 45px 30px; 
             h1{
-                color: $color--brown;
+                color: $color--white;
                 @include exo_2(medium);
                 font-size: 30px;
+                margin: 0;
+                text-shadow: 0 1px 1px rgba(0,0,0,0.4), 0 2px 20px rgba(0,0,0,0.3);
             }
         }
-        .post{
+        .post, .hentry{
+            header{
+                h4, time{
+                    padding: 0px 30px;
+                }
+            }
+            .entry-summary{
+                padding: 0px 30px;
+            }
             h1{
                 color: $color--brown;
-                @include exo_2(medium);
+                @include exo_2(regular);
                 font-size: 30px;
+
             }
             .entry-content{
                 img{
@@ -81,9 +94,41 @@ body{
                 }
             }
         }
+        nav{
+            .page-numbers.pagination{
+                padding: 15px 30px;
+            }
+        }
     }
 }
 
+.page{
+    .main{
+        .ninja-forms-cont{
+            .ninja-forms-form-wrap{
+                padding: 30px 30px;
+            }
+        }
+        .inner{
+            p{
+               padding-left: 30px;
+               padding-right: 30px; 
+            }
+            padding-bottom: 30px;
+        }
+    }
+    .sidebar{
+
+    }
+}
+
+.post-type-archive-transparencia, .tax-tematica{
+    .main{
+        .page-header{
+            background: url('../images/transparencia.png')  no-repeat top left; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;
+        }
+    }
+}
 
 
 .sidebar{
