@@ -56,6 +56,7 @@ body{
     margin-top: 30px;
     .inner{
         background-color: $color--white;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
         /*padding: 7px 30px 20px;*/
         margin: 0;
         .page-header{
@@ -95,8 +96,37 @@ body{
             }
         }
         nav{
+            background-color: $color--orange;
+            text-align: center;
             .page-numbers.pagination{
-                padding: 15px 30px;
+                padding: 0px;
+                border-radius: 0px;
+                li{
+                    span, a{ 
+                        border: 1px solid $color--orange; 
+                        &:hover, &:focus{
+                            background-color: $color--orange--light;
+                            border-color: $color--orange;
+                        }
+                    }
+                    span.page-numbers.current{
+                        background-color: $color--orange;
+                        color: $color--white;
+                    }
+                &:first-child{
+                    span{
+                    border-bottom-left-radius: 0px;
+                    border-top-left-radius: 0px;
+                    }
+                }
+
+                &:last-child{
+                    span, a{
+                        border-bottom-right-radius: 0px;
+                        border-top-right-radius: 0px;
+                    }
+                }
+                }
             }
         }
     }
@@ -224,6 +254,31 @@ time.updated{
       font-size: 10px;
       color: $color--gray--light;
       padding-bottom: 3px;
+}
+
+.category-notas-de-prensa{
+    .page-header{
+        background: url('../images/notas-de-prensa.jpg')  no-repeat top left  !important; 
+        -webkit-background-size: cover; 
+        -moz-background-size: cover; 
+        -o-background-size: cover; background-size: cover;
+    }
+    article{
+        .media{
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid $color--gray--lighter;
+            .media-left{}
+            .media-body{
+                .entry-summary{
+                    padding: 0;
+                }
+            }
+        }
+
+        
+    }
 }
 
 .single {
@@ -358,6 +413,46 @@ ul.dropdown-menu{
         }
     }
 }
+
+/* Wrapper de Galerias */
+.tax-formatos{
+    .main{
+        .inner{
+            @include make-row();
+              margin-left: 0px;
+              margin-right: 0px;
+            .thumbnail-wrapper{
+                @include make-sm-column(4);
+                .thumbnail{
+                    figure{
+                        height: 170px;
+                        overflow: hidden;
+                        a.gallery-thumbnail{
+                            display: block;
+                            position: relative;
+                            max-height: 100%;
+                            img{
+                                 height: 100%;
+                            }
+                            i{
+                                @include absolute_center();
+                                font-size: 24px;
+                                @include text_w_shadow();
+                            }
+                        }
+                    }
+
+                    .caption{
+                        time{
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media(max-width: $screen-xs-max){}
 @media(min-width: $screen-sm-min){
     ul.nav.nav-justified{
@@ -370,6 +465,19 @@ ul.dropdown-menu{
             }
         }
     }
+
+    .category-notas-de-prensa{
+    .page-header{
+
+    }
+    article{
+        .media{
+            .media-left{
+                padding-left: 0 !important;
+            }
+        }
+    }
+}
 }
 @media(min-width: $screen-md-min){}
 @media(min-width: $screen-lg-min){}

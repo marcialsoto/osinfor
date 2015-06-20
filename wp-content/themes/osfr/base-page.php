@@ -33,6 +33,8 @@ use Roots\Sage\Wrapper;
             <?php get_template_part('templates/nav-sidebar','normatividad'); ?>
           <?php } elseif ( is_page( array( 'Comunicación', 'Campañas Propagandísticas', 'Audiovisual/Radio/TV' ))) { ?>
             <?php get_template_part('templates/nav-sidebar','comunicacion'); ?>
+          <?php } elseif ( is_page( array( 'Concesiones  Forestales', 'Permisos y Autorizaciones', 'Servicios Ambientales', 'Biodiversidad', 'Tala Ilegal', 'Aportes al desarrollo' ))) { ?>
+            <?php get_template_part('templates/nav-sidebar','gestion'); ?>
           <?php } else { ?>
             <?php include Wrapper\sidebar_path(); ?>
           <?php } ?>

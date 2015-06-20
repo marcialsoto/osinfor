@@ -348,6 +348,7 @@
 			.media-left{
 				@include make-sm-column(4);
 				height: 120px; 
+				padding-left:0;
 				a{
 					display: block;
 					height: 120px;

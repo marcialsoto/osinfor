@@ -22,10 +22,10 @@
 				
 	    	</div>
 			<div class="footer__sidedar footer-1">
-				<?php dynamic_sidebar( 'footer-1' ); ?>
+				<?php get_template_part('templates/nav-sidebar','nosotros'); ?>
 			</div>
 			<div class="footer__sidedar footer-2">
-				<?php dynamic_sidebar( 'footer-2' ); ?>
+				<?php get_template_part('templates/nav-sidebar','normatividad'); ?>
 			</div>
 			<div class="footer__sidedar footer-3">
 				<?php dynamic_sidebar( 'footer-3' ); ?>

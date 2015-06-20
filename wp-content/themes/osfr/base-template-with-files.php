@@ -29,6 +29,8 @@ use Roots\Sage\Wrapper;
           	<?php get_template_part('templates/nav-sidebar','normatividad'); ?>  	
           <?php }else if ( is_page( array( 'Material Publicitario' ) ) ){ ?>
           	<?php get_template_part('templates/nav-sidebar','comunicacion'); ?>
+          <?php }else if ( is_page( array( 'Política Forestal y Ambiental' ) ) ){ ?>
+            <?php get_template_part('templates/nav-sidebar','gestion'); ?>
           <?php }else{ ?>
             <?php include Wrapper\sidebar_path(); ?>
           <?php } ?>
