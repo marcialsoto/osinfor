@@ -80,6 +80,10 @@ body{
             .entry-summary{
                 padding: 0px 30px;
             }
+            .panel{
+                margin-right: 30px;
+                margin-left: 30px;
+            }
             h1{
                 color: $color--brown;
                 @include exo_2(regular);
@@ -114,7 +118,7 @@ body{
                         color: $color--white;
                     }
                 &:first-child{
-                    span{
+                    span, a{
                     border-bottom-left-radius: 0px;
                     border-top-left-radius: 0px;
                     }
@@ -164,6 +168,13 @@ body{
     }
 }
 
+.post-type-archive-convocatoria, .tax-estado{
+    .badge{
+        a{
+            color: $color--white !important;
+        }
+    }
+}
 
 .sidebar{
     margin-top: 30px;
@@ -256,14 +267,15 @@ time.updated{
       padding-bottom: 3px;
 }
 
-.category-notas-de-prensa{
+.archive{
     .page-header{
-        background: url('../images/notas-de-prensa.jpg')  no-repeat top left  !important; 
+        background: $color--gray--light; 
         -webkit-background-size: cover; 
         -moz-background-size: cover; 
         -o-background-size: cover; background-size: cover;
     }
     article{
+        margin-bottom: 15px;
         .media{
             padding-left: 30px;
             padding-right: 30px;
