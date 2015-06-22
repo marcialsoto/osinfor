@@ -136,6 +136,30 @@ body{
     }
 }
 
+.post-type-archive-publicaciones, .tax-fuentes, .tax-autores, .tax-anos, .tax-temas, .tax-lenguajes{
+    .media{
+        .media-left{}
+        .media-body{
+            position: relative;
+            height: 200px;
+            .panel{
+                margin-right: 0 !important;
+                margin-left: 0 !important;
+
+                .panel-heading{
+                    h4{
+                        padding: 0 !important;
+                    }
+                }
+            }
+            a.read-more{
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    }
+}
+
 .page{
     .main{
         .ninja-forms-cont{
@@ -242,6 +266,12 @@ h3, h4, h4, h6 a, h3 a, h4 a, h4 a, h6 a{
 	font-family: 'exo_2medium', sans-serif;
 }
 
+table{
+    ul{
+        margin-bottom: 0;
+    }
+}
+
 .single p{
     text-align: justify;
 }
@@ -304,13 +334,18 @@ time.updated{
         }
     }
 
-&.single-post{
     .inner{
         article{
             header{
-                padding: 15px 30px;
+                padding: 30px 30px 15px;
                 h1{
                     margin: 0;
+                }
+                .media-left{}
+                .media-body{
+                    .media-heading{
+                        padding: 0;
+                    }
                 }
             }
             .entry-content{
@@ -325,8 +360,19 @@ time.updated{
                     padding-right: 30px;
                 }
             }
+            .comments{
+                .comment-respond{
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+            }
             padding-bottom: 30px;
         }
+    }
+&.single-publicaciones{
+    .panel{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 }
 

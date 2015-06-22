@@ -27,7 +27,8 @@ function setup() {
     'gestion_navigation' => __('Gestión Navigation', 'sage'),
     'comunicacion_navigation' => __('Comunicación Navigation', 'sage'),
     'transparencia_navigation' => __('Transparencia Navigation', 'sage'),
-    'convocatoria_navigation' => __('Convocatorias Navigation', 'sage')
+    'convocatoria_navigation' => __('Convocatorias Navigation', 'sage'),
+    'publicaciones_navigation' => __('Publicaciones Navigation', 'sage')
   ]);
 
   // Add post thumbnails
