@@ -29,6 +29,8 @@ use Roots\Sage\Wrapper;
             <?php dynamic_sidebar('sidebar-contacto'); ?>
           <?php } elseif ( is_page( array( 'Quienes Somos', 'Visión y Misión', 'Funciones', 'Organigrama', 'Directorio' ) ) ) { ?>
             <?php get_template_part('templates/nav-sidebar','nosotros'); ?>
+          <?php } elseif ( is_page( array( 'Capacitación' ) ) ) { ?>
+            <?php get_template_part('templates/nav-sidebar','capacitacion'); ?>
           <?php } elseif ( is_page( array( 'Normatividad', 'Normas para Supervisión a Tí­tulos Habilitantes' ))) { ?>
             <?php get_template_part('templates/nav-sidebar','normatividad'); ?>
           <?php } elseif ( is_page( array( 'Comunicación', 'Campañas Propagandísticas', 'Audiovisual/Radio/TV' ))) { ?>

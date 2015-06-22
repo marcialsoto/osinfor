@@ -28,7 +28,8 @@ function setup() {
     'comunicacion_navigation' => __('Comunicación Navigation', 'sage'),
     'transparencia_navigation' => __('Transparencia Navigation', 'sage'),
     'convocatoria_navigation' => __('Convocatorias Navigation', 'sage'),
-    'publicaciones_navigation' => __('Publicaciones Navigation', 'sage')
+    'publicaciones_navigation' => __('Publicaciones Navigation', 'sage'), 
+    'capacitacion_navigation' => __('Capacitación Navigation', 'sage')
   ]);
 
   // Add post thumbnails
