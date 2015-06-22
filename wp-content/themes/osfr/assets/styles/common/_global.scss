@@ -168,7 +168,7 @@ body{
             }
         }
         .inner{
-            h3, p{
+            h3, p, h4{
                padding-left: 30px;
                padding-right: 30px; 
             }
@@ -238,6 +238,7 @@ body{
 
             &.dropdown{
                 .dropdown-menu{
+                    padding: 0;
                     li{
                         a{
 
@@ -245,6 +246,41 @@ body{
                     &.active{
                         a{
                             background-color: $color--orange;
+                        }
+                    }
+                    &.dropdown{
+                        &:hover{
+                            .dropdown-menu{
+                                display: block;
+                            }
+                        }
+                        .dropdown-menu{
+                                display: none;
+                                li{
+                                    &.dropdown{
+                                        .dropdown-menu{
+                                            display: none;
+                                            li{
+                                                &.dropdown{
+                                                    .dropdown-menu{
+                                                        display: none;
+                                                    }
+                                                    &:hover{
+                                                        .dropdown-menu{
+                                                            display: block;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                       &:hover{
+                                            .dropdown-menu{
+                                                display: block;
+                                            }
+                                        }
+
+                                    }
+                                }
                         }
                     }
                     }
@@ -272,7 +308,7 @@ table{
     }
 }
 
-.single p{
+.single p, .page p{
     text-align: justify;
 }
 
