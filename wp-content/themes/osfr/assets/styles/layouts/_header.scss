@@ -272,14 +272,7 @@ header{
 				.owl-item{					
 					opacity: 0.25;
 					.item{	
-						background-repeat: no-repeat;
-						background-position: top center;
-						-webkit-background-size: cover;
-						-moz-background-size: cover;
-						-o-background-size: cover;
-						background-size: cover;
 						margin: 0 auto;
-						height: 275px;
 						article{
 							height: 100%;
 							@include make-lg-column(12);
@@ -516,7 +509,6 @@ header{
 				.owl-stage{
 					.owl-item{					
 						.item{	
-							height: 425px;
 							article{
 								position: absolute !important;
 								right: 20px;
